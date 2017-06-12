@@ -9,7 +9,6 @@ GLUON_SITE_PACKAGES := \
     gluon-banner \
     gluon-check-client-mesh \
     gluon-check-mesh \
-    gluon-config-mode-tunneldigger \
     gluon-ebtables-filter-multicast \
     gluon-ebtables-filter-ra-dhcp \
     gluon-ebtables-source-filter \
