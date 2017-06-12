@@ -22,7 +22,6 @@ GLUON_SITE_PACKAGES := \
     gluon-authorized-keys \
     gluon-mesh-vpn-tunneldigger \
     gluon-neighbour-info \
-    gluon-next-node \
     gluon-radvd \
     gluon-respondd \
     gluon-setup-mode \
