@@ -22,7 +22,6 @@ GLUON_SITE_PACKAGES := \
     gluon-web-wifi-config \
     gluon-mesh-batman-adv-15 \
     gluon-mesh-vpn-tunneldigger \
-    gluon-authorized-keys \
     gluon-neighbour-info \
     gluon-radvd \
     gluon-respondd \
