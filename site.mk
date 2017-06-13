@@ -6,9 +6,12 @@ GLUON_SITE_PACKAGES := \
     gluon-config-mode-core \
     gluon-config-mode-geo-location \
     gluon-config-mode-hostname \
+    gluon-config-mode-mesh-vpn \
+    gluon-core \
     gluon-banner \
     gluon-check-client-mesh \
     gluon-check-mesh \
+    gluon-ebtables \
     gluon-ebtables-filter-multicast \
     gluon-ebtables-filter-ra-dhcp \
     gluon-ebtables-source-filter \
@@ -19,6 +22,7 @@ GLUON_SITE_PACKAGES := \
     gluon-web-wifi-config \
     gluon-mesh-batman-adv-15 \
     gluon-mesh-vpn-tunneldigger \
+    gluon-authorized-keys \
     gluon-neighbour-info \
     gluon-radvd \
     gluon-respondd \
@@ -30,7 +34,7 @@ GLUON_SITE_PACKAGES := \
     iptables \
     iwinfo \
     rsk-nightswitch \
-    gluon-rsk-config 
+    gluon-rsk-config
 
 
 DEFAULT_GLUON_RELEASE := 2017.1-stable-2.9
