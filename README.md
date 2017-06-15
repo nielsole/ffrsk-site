@@ -1,2 +1,2 @@
 # ffsu-site
-# site.conf for Siegburg Domain
+# site.conf for Niederkassel
