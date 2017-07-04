@@ -31,8 +31,8 @@ GLUON_SITE_PACKAGES := \
     gluon-ssid-changer \
     gluon-banner \
     rsk-nightswitch \
-    gluon-rsk-config \
-    gluon-treatment
+    gluon-rsk-config
+    
 
 DEFAULT_GLUON_RELEASE := stable-2.8.3
 # Allow overriding the release number from the command line
