@@ -33,6 +33,7 @@ GLUON_SITE_PACKAGES := \
     iptables \
     iwinfo \
     rsk-nightswitch \
+    gluon-rsk-speedlimit \
     gluon-rsk-config
 
 
