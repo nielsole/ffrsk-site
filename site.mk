@@ -34,6 +34,7 @@ GLUON_SITE_PACKAGES := \
     iwinfo \
     rsk-nightswitch \
     gluon-rsk-speedlimit \
+    gluon-rsk-block-mesh \
     gluon-rsk-config
 
 
