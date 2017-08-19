@@ -34,6 +34,7 @@ GLUON_SITE_PACKAGES := \
     iwinfo \
     rsk-nightswitch \
     gluon-rsk-speedlimit \
+    gluon-rsk-block-mesh \
     gluon-rsk-config 
 
 DEFAULT_GLUON_RELEASE := stable-2.8.6
