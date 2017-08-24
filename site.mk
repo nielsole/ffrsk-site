@@ -34,6 +34,7 @@ GLUON_SITE_PACKAGES := \
     iptables \
     iwinfo \
     rsk-nightswitch \
+    gluon-rsk-block-mesh \
     gluon-rsk-config
 
 
