@@ -31,6 +31,7 @@ GLUON_SITE_PACKAGES := \
     gluon-ssid-changer \
     gluon-banner \
     rsk-nightswitch \
+    gluon-rsk-block-mesh \
     gluon-rsk-config
     
 
