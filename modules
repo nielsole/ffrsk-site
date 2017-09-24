@@ -1,4 +1,4 @@
-GLUON_SITE_FEEDS='rsk ffki'
+GLUON_SITE_FEEDS='rsk ffrl ffki'
 
 PACKAGES_RSK_REPO=https://github.com/Freifunk-Rhein-Sieg/freifunk-packages
 PACKAGES_RSK_COMMIT=e0e1a0dee2e9b6f99f79d4c39e915de17a44afe7
