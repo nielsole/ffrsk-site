@@ -161,6 +161,11 @@ case $CHOICE in
                 # * x86-64
                 make V=s GLUON_TARGET=x86-64 clean; make V=s GLUON_TARGET=x86-64
                 #
+                 # make stable.manifest
+                make manifest GLUON_BRANCH=stable
+                #
+                # sign images
+                contrib/sign.sh /usr/src/freifunk/gluon_lede/keys/secret.freifunk-siegburg output/images/sysupgrade/stable.manifest
 
             ;;
 
