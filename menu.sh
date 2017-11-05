@@ -98,7 +98,7 @@ case $CHOICE in
              ;;
 
         0)   echo "syncing git tree"
-                make update
+                git pull; make update
              ;;
 
          12)
