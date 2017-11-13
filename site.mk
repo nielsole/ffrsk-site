@@ -2,6 +2,7 @@ GLUON_SITE_PACKAGES := \
     gluon-alfred \
     gluon-autoupdater \
     gluon-config-mode-autoupdater \
+    gluon-config-mode-contact-info \
     gluon-config-mode-contact-info-anonymous-hint \
     gluon-config-mode-core \
     gluon-config-mode-geo-location \
@@ -39,7 +40,7 @@ GLUON_SITE_PACKAGES := \
     rsk-robinson
 
 
-DEFAULT_GLUON_RELEASE := stable-2.9.6
+DEFAULT_GLUON_RELEASE := stable-2.9.7
 # Allow overriding the release number from the command line
 
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
