@@ -161,6 +161,9 @@ case $CHOICE in
                 # * x86-64
                 make V=s GLUON_TARGET=x86-64 clean; make V=s GLUON_TARGET=x86-64
                 #
+                #  * ramips-mt7621
+                 make V=s BROKEN=1 GLUON_TARGET=ramips-mt7621
+                 #
                  # make stable.manifest
                 make manifest GLUON_BRANCH=stable
                 #
