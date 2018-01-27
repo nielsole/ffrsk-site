@@ -21,7 +21,6 @@ GLUON_SITE_PACKAGES := \
     gluon-web-network \
     gluon-web-private-wifi \
     gluon-web-wifi-config \
-    gluon-authorized-keys \
     gluon-mesh-batman-adv-15 \
     gluon-mesh-vpn-fastd \
     gluon-neighbour-info \
