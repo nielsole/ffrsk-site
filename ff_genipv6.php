@@ -4,11 +4,19 @@
 // (c) 2017 by Claus Marxmeier
 
 $debug="";
-$nodeid=$argv[1];
 
-if ($debug){
-        var_dump($argv);
+if (PHP_SAPI === 'cli') {
+    $nodeid = $argv[1];
+        if ($debug){
+          var_dump($argv);
+        }
 }
+
+else {
+    $nodeid = $_GET['argument1'];
+}
+
+
 
 if (!$nodeid){
         echo "Please enter nodeid as param! using default value: 1eb70676ca92.\n\n";
