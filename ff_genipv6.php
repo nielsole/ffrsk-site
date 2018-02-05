@@ -13,7 +13,7 @@ if (PHP_SAPI === 'cli') {
 }
 
 else {
-    $nodeid = $_GET['argument1'];
+    $nodeid = $_GET['nodeid'];
 }
 
 
