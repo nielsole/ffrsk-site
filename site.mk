@@ -5,7 +5,6 @@ GLUON_SITE_PACKAGES := \
     gluon-config-mode-contact-info \
     gluon-config-mode-core \
     gluon-config-mode-geo-location \
-    gluon-config-mode-autoupdater \
     gluon-config-mode-hostname \
     gluon-config-mode-mesh-vpn \
     gluon-core \
@@ -22,13 +21,15 @@ GLUON_SITE_PACKAGES := \
     gluon-web-private-wifi \
     gluon-web-wifi-config \
     gluon-mesh-batman-adv-15 \
-    gluon-mesh-vpn-fastd \
+    gluon-mesh-vpn-tunneldigger \
     gluon-neighbour-info \
     gluon-radvd \
     gluon-respondd \
     gluon-setup-mode \
     gluon-ssid-changer \
     gluon-status-page \
+    gluon-tunneldigger-watchdog \
+    gluon-migrate-vpn \
     haveged \
     iptables \
     iwinfo \
@@ -38,7 +39,7 @@ GLUON_SITE_PACKAGES := \
     rsk-robinson
 
 
-DEFAULT_GLUON_RELEASE := stable-2.9.12
+DEFAULT_GLUON_RELEASE := stable-2.9.14
 # Allow overriding the release number from the command line
 
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
