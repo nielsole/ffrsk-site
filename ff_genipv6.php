@@ -31,7 +31,8 @@ $ipv6_prefix_04="2a03:2260:3017:400:";
 $ipv6_prefix_05="2a03:2260:3017:500:";
 $ipv6_prefix_07="2a03:2260:3017:700:";
 $ipv6_prefix_11="2a03:2260:3017:1100:";
-
+$ipv6_prefix_14="2a03:2260:3017:1400:";
+    
 // Troisdorf
 $ipv6_tdf_prefix_4="2a03:2260:121:4000:";
 $ipv6_tdf_prefix_5="2a03:2260:121:5000:";
@@ -61,6 +62,7 @@ echo "Sankt Au : ".$ipv6_prefix_04.$ipv6.$platform;
 echo "SozNet   : ".$ipv6_prefix_05.$ipv6.$platform;
 echo "Niederkas: ".$ipv6_prefix_07.$ipv6.$platform;
 echo "Altenkir : ".$ipv6_prefix_11.$ipv6.$platform;
+echo "Rheinbach: ".$ipv6_prefix_14.$ipv6.$platform;
 echo $platform;
 echo "Tdf-Stadt: ".$ipv6_tdf_prefix_5.$ipv6.$platform;
 echo "Tdf-Umgeb: ".$ipv6_tdf_prefix_4.$ipv6.$platform;
