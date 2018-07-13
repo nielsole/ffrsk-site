@@ -30,6 +30,7 @@ GLUON_SITE_PACKAGES := \
     gluon-setup-mode \
     gluon-ssid-changer \
     gluon-status-page \
+    gluon-status-page-mesh-batman-adv \
     gluon-tunneldigger-watchdog \
     haveged \
     iptables \
