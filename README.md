@@ -1,3 +1,3 @@
 # ffsu-site
 # site.conf for Rheinbach Domain
-# for v2017.1.x l2tp - lede based gluon
+# generated for 2018.1.x based gluon
