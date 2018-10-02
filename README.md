@@ -1,3 +1,3 @@
 # ffsu-site
-# site.conf for Soziale NetzWerke Domain
+# site.conf for Niederkassel Domain
 # generated for 2018.1.x based gluon
