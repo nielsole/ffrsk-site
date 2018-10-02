@@ -31,7 +31,6 @@ GLUON_SITE_PACKAGES := \
     gluon-status-page \
     gluon-status-page-mesh-batman-adv \
     gluon-tunneldigger-watchdog \
-    gluon-migrate-vpn \
     haveged \
     iptables \
     iwinfo \
