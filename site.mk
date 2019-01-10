@@ -1,6 +1,5 @@
 GLUON_SITE_PACKAGES := \
     gluon-alfred \
-    gluon-autoupdater \
     gluon-config-mode-autoupdater \
     gluon-config-mode-contact-info \
     gluon-config-mode-core \
@@ -15,12 +14,13 @@ GLUON_SITE_PACKAGES := \
     gluon-ebtables-filter-multicast \
     gluon-ebtables-filter-ra-dhcp \
     gluon-ebtables-source-filter \
+    gluon-ebtables-limit-arp \
     gluon-web-admin \
     gluon-web-autoupdater \
     gluon-web-network \
     gluon-web-private-wifi \
     gluon-web-wifi-config \
-	gluon-authorized-keys \
+    gluon-authorized-keys \
     gluon-mesh-batman-adv-15 \
     gluon-mesh-vpn-tunneldigger \
     gluon-neighbour-info \
