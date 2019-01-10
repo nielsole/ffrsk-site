@@ -137,9 +137,6 @@ case $CHOICE in
                 #  * ar71xx-generic
                 make V=s GLUON_TARGET=ar71xx-generic clean; make V=s GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable
                 #
-                # * ar71xx-mikrotik
-                make V=s GLUON_TARGET=ar71xx-mikrotik clean; make V=s GLUON_TARGET=ar71xx-mikrotik GLUON_BRANCH=stable
-                #
                 #  * ar71xx-tiny
                 make V=s GLUON_TARGET=ar71xx-tiny clean; make V=s GLUON_TARGET=ar71xx-tiny GLUON_BRANCH=stable
                 #
