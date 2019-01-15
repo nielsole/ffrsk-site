@@ -35,6 +35,7 @@ GLUON_SITE_PACKAGES := \
     haveged \
     iptables \
     iwinfo \
+    iw-full \
     rsk-nightswitch \
     gluon-rsk-speedlimit \
     gluon-rsk-block-mesh \
