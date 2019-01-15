@@ -1,6 +1,6 @@
 # ffsu-site
 # site.conf for Soziale NetzWerke Domain
-# generated for 2018.1.x based gluon
+# generated for 2018.2.x based gluon
 # switch from LEDE to openwrt
 
 Do not extend number of gateways in site.conf  - openwrt busybox string length is limited and tunneldigger startscript may fail
