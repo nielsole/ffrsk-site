@@ -205,7 +205,7 @@ case $CHOICE in
                 make V=s GLUON_TARGET=ar71xx-nand clean; make V=s GLUON_TARGET=ar71xx-nand GLUON_BRANCH=stable
                 #
                 # * ar71xx-mikrotik
-                make V=s GLUON_TARGET=ar71xx-mikrotik  clean; make V=s GLUON_TARGET=ar71xx-mikrotik GLUON_BRANCH=stable
+                make V=s BROKEN=1 GLUON_TARGET=ar71xx-mikrotik  clean; make V=s BROKEN=1 GLUON_TARGET=ar71xx-mikrotik GLUON_BRANCH=stable
                 #
                 # * brcm2708-bcm2708
                 make V=s GLUON_TARGET=brcm2708-bcm2708 clean; make V=s GLUON_TARGET=brcm2708-bcm2708 GLUON_BRANCH=stable
@@ -239,7 +239,7 @@ case $CHOICE in
                 #
                 #
                 # * ipq40xx
-                 make V=s GLUON_TARGET=ipq40xx clean;  make V=s GLUON_TARGET=sunxi-cortexa7 GLUON_BRANCH=stable
+                 make V=s BROKEN=1 GLUON_WLAN_MESH_11s=1 GLUON_TARGET=ipq40xx clean;  make V=s BROKEN=1 GLUON_WLAN_MESH_11s=1 GLUON_TARGET=sunxi-cortexa7 GLUON_BRANCH=stable
 
 
                 # make stable.manifest
