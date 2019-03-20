@@ -16,22 +16,28 @@ BACKTITLE="Gluon 2018.2.x Firmware Builder"
 TITLE="L2TP rhein-sieg modulares make"
 MENU="Welche Architektur(en) willst Du bauen:"
 
-#  * ar71xx-generic
-#  * ar71xx-tiny
-#  * ar71xx-nand
-#  * brcm2708-bcm2708
-#  * brcm2708-bcm2709
-#  * mpc85xx-generic
-#  * ramips-mt7621
-#  * sunxi-cortexa7
-#  * x86-generic
-#  * x86-geode
-#  * x86-64
-#  * ipq40xx
-#  * ramips-mt7620
-#  * ramips-mt76x8
-#  * ramips-rt305x
-
+# * ar71xx-generic
+# * ar71xx-tiny
+# * ar71xx-nand
+# * brcm2708-bcm2708    
+# * brcm2708-bcm2709
+# * mpc85xx-generic
+# * ramips-mt7621
+# * sunxi-cortexa7
+# * x86-generic
+# * x86-geode
+# * x86-64
+# * ipq40xx
+# * ramips-mt7620
+# * ramips-mt76x8
+# * ramips-rt305x
+#
+# non-stable: 
+#
+# * ar71xx-mikrotik    # BROKEN: no sysupgrade support 
+# * brcm2708-bcm2710   # BROKEN: Untested
+# * ipq806x            # BROKEN: unstable wifi drivers 
+# * mvebu-cortexa9      # BROKEN: No AP+IBSS or 11s support
 
 OPTIONS=(0 "make update"
         1 "all platforms"
