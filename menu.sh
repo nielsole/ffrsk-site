@@ -139,6 +139,9 @@ case $CHOICE in
                 # * ar71xx-tiny
                 make V=s GLUON_TARGET=ar71xx-tiny clean
                 #
+                # * ar71xx-mikrotik
+                make V=s GLUON_TARGET=ar71xx-mikrotik clean
+                #
                 # * brcm2708-bcm2708
                 make V=s GLUON_TARGET=brcm2708-bcm2708 clean
                 #
@@ -200,6 +203,9 @@ case $CHOICE in
                 #
                 # * ar71xx-nand
                 make V=s GLUON_TARGET=ar71xx-nand clean; make V=s GLUON_TARGET=ar71xx-nand GLUON_BRANCH=stable
+                #
+                # * ar71xx-mikrotik
+                make V=s GLUON_TARGET=ar71xx-mikrotik  clean; make V=s GLUON_TARGET=ar71xx-mikrotik GLUON_BRANCH=stable
                 #
                 # * brcm2708-bcm2708
                 make V=s GLUON_TARGET=brcm2708-bcm2708 clean; make V=s GLUON_TARGET=brcm2708-bcm2708 GLUON_BRANCH=stable
