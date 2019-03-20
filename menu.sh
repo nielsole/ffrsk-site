@@ -12,9 +12,26 @@ do
 HEIGHT=20
 WIDTH=45
 CHOICE_HEIGHT=14
-BACKTITLE="Gluon 2018.1.x Firmware Builder"
+BACKTITLE="Gluon 2018.2.x Firmware Builder"
 TITLE="L2TP rhein-sieg modulares make"
 MENU="Welche Architektur(en) willst Du bauen:"
+
+#  * ar71xx-generic
+#  * ar71xx-tiny
+#  * ar71xx-nand
+#  * brcm2708-bcm2708
+#  * brcm2708-bcm2709
+#  * mpc85xx-generic
+#  * ramips-mt7621
+#  * sunxi-cortexa7
+#  * x86-generic
+#  * x86-geode
+#  * x86-64
+#  * ipq40xx
+#  * ramips-mt7620
+#  * ramips-mt76x8
+#  * ramips-rt305x
+
 
 OPTIONS=(0 "make update"
         1 "all platforms"
@@ -27,6 +44,17 @@ OPTIONS=(0 "make update"
         8 "x86-generic"
         9 "x86-geode"
         10 "x86-64"
+        11 "ar71xx-mikrotik"
+        12 "brcm2708-bcm2710"
+        13 "ipq40xx"
+        14 "ipq806x"
+        15 "mvebu-cortexa9"
+        16 "ramips-mt7620"
+        17 "ramips-mt7621"
+        18 "ramips-mt76x8"
+        19 "ramips-rt305x"
+        20 "sunxi-cortexa7"
+
         98 "clean output"
         99 "clean all")
 
@@ -89,8 +117,7 @@ case $CHOICE in
         10)
              echo "x86-64"
              make V=s GLUON_TARGET=x86-64 clean; make V=s GLUON_TARGET=x86-64 GLUON_BRANCH=stable
-
-             ;;
+            ;;
 
         98)
              echo "cleaning output"
@@ -130,7 +157,38 @@ case $CHOICE in
                 # * x86-64
                 make V=s GLUON_TARGET=x86-64 clean
                 #
+                # *  ar71xx-mikrotik
+                make V=s GLUON_TARGET=ar71xx-mikrotik clean
+                #
+                # * brcm2708-bcm2710
+                make V=s GLUON_TARGET=brcm2708-bcm2710 clean
+                #
+                # * ipq40xx
+                make V=s GLUON_TARGET=ipq40xx clean
+                #
+                # * ipq806x
+                make V=s GLUON_TARGET=ipq806x clean
+                #
+                # * mvebu-cortexa9
+                make V=s GLUON_TARGET=mvebu-cortexa9 clean
+                #
+                # * ramips-mt7620
+                 make V=s GLUON_TARGET=ramips-mt7620 clean
+                #
+                # * ramips-mt7621
+                make V=s GLUON_TARGET=ramips-mt7621 clean
+                #
+                # * ramips-mt76x8
+                make V=s GLUON_TARGET=ramips-mt76x8 clean
+                #
+                # * ramips-rt305x
+                 make V=s GLUON_TARGET=ramips-rt305x clean
+                #
+                # * sunxi-cortexa7
+                 make V=s GLUON_TARGET=sunxi-cortexa7 clean
+
              ;;
+
            1) echo "all platforms ..."
                 # Platforms:
                 #
@@ -165,7 +223,7 @@ case $CHOICE in
                 make V=s GLUON_TARGET=ramips-mt7620 clean; make V=s GLUON_TARGET=ramips-mt7620 GLUON_BRANCH=stable
                 #
                 #  * ramips-mt7621
-                make V=s BROKEN=1 GLUON_TARGET=ramips-mt7621 GLUON_BRANCH=stable
+                 make V=s BROKEN=1 GLUON_TARGET=ramips-mt7621 GLUON_BRANCH=stable
                 #
                 #  * ramips-mt76x8
                 make V=s GLUON_TARGET=ramips-mt76x8 clean; make V=s GLUON_TARGET=ramips-mt76x8 GLUON_BRANCH=stable
@@ -173,6 +231,10 @@ case $CHOICE in
                 #  * sunxi-cortexa7
                 make V=s GLUON_TARGET=sunxi-cortexa7 clean; make V=s GLUON_TARGET=sunxi-cortexa7 GLUON_BRANCH=stable
                 #
+                #
+                # * ipq40xx
+                 make V=s GLUON_TARGET=ipq40xx clean;  make V=s GLUON_TARGET=sunxi-cortexa7 GLUON_BRANCH=stable
+
 
                 # make stable.manifest
                 make manifest GLUON_BRANCH=stable
@@ -188,3 +250,4 @@ esac
 
 
 done # loop forever
+
