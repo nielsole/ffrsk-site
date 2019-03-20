@@ -15,7 +15,8 @@ CHOICE_HEIGHT=14
 BACKTITLE="Gluon 2018.2.x Firmware Builder"
 TITLE="L2TP rhein-sieg modulares make"
 MENU="Welche Architektur(en) willst Du bauen:"
-
+#
+# STABLE:
 # * ar71xx-generic
 # * ar71xx-tiny
 # * ar71xx-nand
