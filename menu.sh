@@ -34,10 +34,18 @@ MENU="Welche Architektur(en) willst Du bauen:"
 #
 # non-stable: 
 #
+#  BROKEN:
 # * ar71xx-mikrotik    # BROKEN: no sysupgrade support 
 # * brcm2708-bcm2710   # BROKEN: Untested
 # * ipq806x            # BROKEN: unstable wifi drivers 
 # * mvebu-cortexa9      # BROKEN: No AP+IBSS or 11s support
+#
+# GLUON_WLAN_MESH_11s_BROKEN:
+# * ipq40xx
+# * ramips-mt7620
+# * ramips-mt76x8
+# * ramips-rt305x 
+
 
 OPTIONS=(0 "make update"
         1 "all platforms"
