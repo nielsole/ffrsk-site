@@ -164,24 +164,6 @@ case $CHOICE in
 		#
 		# * brcm2708-bcm2710
                 make -j$X V=s GLUON_TARGET=brcm2708-bcm2710 clean
-                #
-                # * mpc85xx-generic
-                make -j$X V=s GLUON_TARGET=mpc85xx-generic clean
-                #
-                # * x86-generic
-                make -j$X V=s GLUON_TARGET=x86-generic clean
-                #
-                # * x86-geode
-                make -j$X V=s GLUON_TARGET=x86-geode clean
-                #
-                # * x86-64
-                make V=s GLUON_TARGET=x86-64 clean
-                #
-                # *  ar71xx-mikrotik
-		make -j$X V=s GLUON_TARGET=ar71xx-mikrotik clean
-                # 
-		# * brcm2708-bcm2710
-		make -j$X V=s GLUON_TARGET=brcm2708-bcm2710 clean
 		# 
 	        # * ipq40xx
 		make -j$X V=s GLUON_TARGET=ipq40xx clean
@@ -189,11 +171,14 @@ case $CHOICE in
         	# * ipq806x
 		make -j$X V=s GLUON_TARGET=ipq806x clean
 		#
-                # * mvebu-cortexa9
+		# * mpc85xx-generic
+                make -j$X V=s GLUON_TARGET=mpc85xx-generic clean
+                #
+		# * mvebu-cortexa9
 		make -j$X V=s GLUON_TARGET=mvebu-cortexa9 clean
                 #
                 # * ramips-mt7620
-		 make -j$X V=s GLUON_TARGET=ramips-mt7620 clean
+		make -j$X V=s GLUON_TARGET=ramips-mt7620 clean
 		#
         	# * ramips-mt7621
 		make -j$X V=s GLUON_TARGET=ramips-mt7621 clean
@@ -202,11 +187,21 @@ case $CHOICE in
 		make -j$X V=s GLUON_TARGET=ramips-mt76x8 clean
 		# 
         	# * ramips-rt305x
-		 make -j$X V=s GLUON_TARGET=ramips-rt305x clean
+		make -j$X V=s GLUON_TARGET=ramips-rt305x clean
 		#
         	# * sunxi-cortexa7
-		 make -j$X V=s GLUON_TARGET=sunxi-cortexa7 clean
-
+		make -j$X V=s GLUON_TARGET=sunxi-cortexa7 clean
+		#
+                # * x86-generic
+                make -j$X V=s GLUON_TARGET=x86-generic clean
+                #
+                # * x86-geode
+                make -j$X V=s GLUON_TARGET=x86-geode clean
+                #
+                # * x86-64
+                make V=s GLUON_TARGET=x86-64 clean
+                
+		
              ;;
            1) echo "all platforms ..."
                 # Platforms:
@@ -214,14 +209,14 @@ case $CHOICE in
                 #  * ar71xx-generic
                 make -j$X V=s GLUON_TARGET=ar71xx-generic clean; make -j$X V=s GLUON_TARGET=ar71xx-generic GLUON_BRANCH=stable
                 #
-                #  * ar71xx-tiny
-                make -j$X V=s GLUON_TARGET=ar71xx-tiny clean; make -j$X V=s GLUON_TARGET=ar71xx-tiny GLUON_BRANCH=stable
+		# * ar71xx-mikrotik
+		#make -j$X V=s BROKEN=1 GLUON_TARGET=ar71xx-mikrotik  clean; make -j$X V=s BROKEN=1 GLUON_TARGET=ar71xx-mikrotik GLUON_BRANCH=stable
                 #
                 # * ar71xx-nand
                 make -j$X V=s GLUON_TARGET=ar71xx-nand clean; make -j$X V=s GLUON_TARGET=ar71xx-nand GLUON_BRANCH=stable
 		#
-		# * ar71xx-mikrotik
-		#make -j$X V=s BROKEN=1 GLUON_TARGET=ar71xx-mikrotik  clean; make -j$X V=s BROKEN=1 GLUON_TARGET=ar71xx-mikrotik GLUON_BRANCH=stable
+                #  * ar71xx-tiny
+                make -j$X V=s GLUON_TARGET=ar71xx-tiny clean; make -j$X V=s GLUON_TARGET=ar71xx-tiny GLUON_BRANCH=stable
                 #
                 # * brcm2708-bcm2708
                 make -j$X V=s GLUON_TARGET=brcm2708-bcm2708 clean; make -j$X V=s GLUON_TARGET=brcm2708-bcm2708 GLUON_BRANCH=stable
@@ -232,17 +227,17 @@ case $CHOICE in
                 # * brcm2708-bcm2710
                 make -j$X V=s GLUON_TARGET=brcm2708-bcm2710 clean; make -j$X V=s GLUON_TARGET=brcm2708-bcm2710 GLUON_BRANCH=stable
                 #
+		# * ipq40xx
+		make -j$X V=s BROKEN=1 GLUON_WLAN_MESH_11s_BROKEN=1 GLUON_TARGET=ipq40xx clean;  make -j$X V=s BROKEN=1 GLUON_WLAN_MESH_11s_BROKEN=1 GLUON_TARGET=ipq40xx GLUON_BRANCH=stable		
+		#
+		# * ipq806x
+		make -j$X V=s BROKEN=1 GLUON_WLAN_MESH_11s_BROKEN=1 GLUON_TARGET=ipq806x clean;  make -j$X V=s BROKEN=1 GLUON_WLAN_MESH_11s_BROKEN=1 GLUON_TARGET=ipq806x GLUON_BRANCH=stable		
+		#
                 # * mpc85xx-generic
                 make -j$X V=s GLUON_TARGET=mpc85xx-generic clean; make -j$X V=s GLUON_TARGET=mpc85xx-generic GLUON_BRANCH=stable
                 #
-                # * x86-generic
-                make -j$X V=s GLUON_TARGET=x86-generic clean; make -j$X V=s GLUON_TARGET=x86-generic GLUON_BRANCH=stable
-                #
-                # * x86-geode
-                make -j$X V=s GLUON_TARGET=x86-geode clean; make -j$X V=s GLUON_TARGET=x86-geode GLUON_BRANCH=stable
-                #
-                # * x86-64
-                make -j$X V=s GLUON_TARGET=x86-64 clean; make -j$X V=s GLUON_TARGET=x86-64 GLUON_BRANCH=stable
+		# * mvebu-cortexa9
+                make -j$X V=s GLUON_TARGET=mvebu-cortexa9 clean; make -j$X V=s GLUON_TARGET=mvebu-cortexa9 GLUON_BRANCH=stable
                 #
 		#  * ramips-mt7620
 		make -j$X V=s GLUON_TARGET=ramips-mt7620 clean; make -j$X V=s GLUON_TARGET=ramips-mt7620 GLUON_BRANCH=stable
@@ -253,13 +248,22 @@ case $CHOICE in
 		#  * ramips-mt76x8
 		make -j$X V=s GLUON_TARGET=ramips-mt76x8 clean; make -j$X V=s GLUON_TARGET=ramips-mt76x8 GLUON_BRANCH=stable
 	 	#
+		#  * ramips-rt305x
+		make -j$X V=s GLUON_TARGET=ramips-rt305x clean; make -j$X V=s GLUON_TARGET=ramips-rt305x GLUON_BRANCH=stable
+		#
 		#  * sunxi-cortexa7
 		make -j$X V=s GLUON_TARGET=sunxi-cortexa7 clean; make -j$X V=s GLUON_TARGET=sunxi-cortexa7 GLUON_BRANCH=stable
 		#
-		#
-		# * ipq40xx
-		make -j$X V=s BROKEN=1 GLUON_WLAN_MESH_11s_BROKEN=1 GLUON_TARGET=ipq40xx clean;  make -j$X V=s BROKEN=1 GLUON_WLAN_MESH_11s_BROKEN=1 GLUON_TARGET=ipq40xx GLUON_BRANCH=stable		
-
+                # * x86-generic
+                make -j$X V=s GLUON_TARGET=x86-generic clean; make -j$X V=s GLUON_TARGET=x86-generic GLUON_BRANCH=stable
+                #
+                # * x86-geode
+                make -j$X V=s GLUON_TARGET=x86-geode clean; make -j$X V=s GLUON_TARGET=x86-geode GLUON_BRANCH=stable
+                #
+                # * x86-64
+                make -j$X V=s GLUON_TARGET=x86-64 clean; make -j$X V=s GLUON_TARGET=x86-64 GLUON_BRANCH=stable
+                
+		
 
     	 	# make stable.manifest
                 make manifest GLUON_BRANCH=stable
