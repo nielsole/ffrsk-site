@@ -30,16 +30,20 @@ MENU="Welche Architektur(en) willst Du bauen:"
 #  * ar71xx-mikrotik 
 #  * brcm2708-bcm2708
 #  * brcm2708-bcm2709
+#  * brcm2708-bcm2710
 #  * mpc85xx-generic
+#  * mvebu-cortexa9
+#  * ipq40xx
+#  * ipq806x
+#  * ramips-mt7620
 #  * ramips-mt7621
+#  * ramips-mt76x8
+#  * ramips-rt305x
 #  * sunxi-cortexa7
 #  * x86-generic
 #  * x86-geode
 #  * x86-64
-#  * ipq40xx
-#  * ramips-mt7620
-#  * ramips-mt76x8
-#  * ramips-rt305x
+
 
 
 OPTIONS=(0 "make update"
@@ -157,6 +161,9 @@ case $CHOICE in
                 #
                 # * brcm2708-bcm2709
                 make -j$X V=s GLUON_TARGET=brcm2708-bcm2709 clean
+		#
+		# * brcm2708-bcm2710
+                make -j$X V=s GLUON_TARGET=brcm2708-bcm2710 clean
                 #
                 # * mpc85xx-generic
                 make -j$X V=s GLUON_TARGET=mpc85xx-generic clean
@@ -221,6 +228,9 @@ case $CHOICE in
                 #
                 # * brcm2708-bcm2709
                 make -j$X V=s GLUON_TARGET=brcm2708-bcm2709 clean; make -j$X V=s GLUON_TARGET=brcm2708-bcm2709 GLUON_BRANCH=stable
+                #
+                # * brcm2708-bcm2710
+                make -j$X V=s GLUON_TARGET=brcm2708-bcm2710 clean; make -j$X V=s GLUON_TARGET=brcm2708-bcm2710 GLUON_BRANCH=stable
                 #
                 # * mpc85xx-generic
                 make -j$X V=s GLUON_TARGET=mpc85xx-generic clean; make -j$X V=s GLUON_TARGET=mpc85xx-generic GLUON_BRANCH=stable
