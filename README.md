@@ -1,6 +1,6 @@
 # ffsu-site
 # site.conf for Niederkassel Domain
-# generated for 2018.2.x based gluon
-# switch from LEDE to openwrt
+# generated for 2019.x based gluon
+# openwrt
 
 Do not extend number of gateways in site.conf  - openwrt busybox string length is limited and tunneldigger startscript may fail
