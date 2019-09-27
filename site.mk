@@ -53,3 +53,6 @@ GLUON_REGION ?= eu
 # Build ATH10K images
 GLUON_ATH10K_MESH ?= 11s
 GLUON_WLAN_MESH ?= 11s
+
+# Do build images for deprecated devices
+GLUON_DEPRECATED ?= 1
