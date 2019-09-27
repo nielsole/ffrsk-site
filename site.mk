@@ -31,7 +31,6 @@ GLUON_SITE_PACKAGES := \
     gluon-ssid-changer \
     gluon-status-page \
     gluon-status-page-mesh-batman-adv \
-    gluon-tunneldigger-watchdog \
     haveged \
     iptables \
     iwinfo \
