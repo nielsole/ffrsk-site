@@ -1,0 +1,15 @@
+--- a/targets/ar71xx-generic    2019-09-28 11:56:17.427413147 +0200
++++ b/targets/ar71xx-generic    2019-09-28 11:57:12.644775801 +0200
+@@ -124,6 +124,10 @@
+        packages = ATH10K_PACKAGES_QCA9887,
+ })
+
++device('gl.inet-gl-mifi', 'gl-mifi', {
++        factory = false,
++        manifest_aliases = {'gl-mifi'},
++})
+
+ -- Linksys by Cisco
+
+
+
