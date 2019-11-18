@@ -144,62 +144,10 @@ case $CHOICE in
 
          99)
              echo "cleaning up all targets ..."
-                #  * ar71xx-generic
-                make -j$X V=s GLUON_TARGET=ar71xx-generic clean
-                #
-                # * ar71xx-nand
-                make -j$X V=s GLUON_TARGET=ar71xx-nand clean
-                #
-                # * ar71xx-tiny
-                make -j$X V=s GLUON_TARGET=ar71xx-tiny clean
-		#
-		# * ar71xx-mikrotik
-                make -j$X V=s BROKEN=1 GLUON_TARGET=ar71xx-mikrotik clean
-                #
-                # * brcm2708-bcm2708
-                make -j$X V=s GLUON_TARGET=brcm2708-bcm2708 clean
-                #
-                # * brcm2708-bcm2709
-                make -j$X V=s GLUON_TARGET=brcm2708-bcm2709 clean
-		#
-		# * brcm2708-bcm2710
-                make -j$X V=s GLUON_TARGET=brcm2708-bcm2710 clean
-		# 
-	        # * ipq40xx
-		make -j$X V=s GLUON_TARGET=ipq40xx clean
-		#
-        	# * ipq806x
-		make -j$X V=s GLUON_TARGET=ipq806x clean
-		#
-		# * mpc85xx-generic
-                make -j$X V=s GLUON_TARGET=mpc85xx-generic clean
-                #
-		# * mvebu-cortexa9
-		make -j$X V=s GLUON_TARGET=mvebu-cortexa9 clean
-                #
-                # * ramips-mt7620
-		make -j$X V=s GLUON_TARGET=ramips-mt7620 clean
-		#
-        	# * ramips-mt7621
-		make -j$X V=s GLUON_TARGET=ramips-mt7621 clean
-		# 
-        	# * ramips-mt76x8
-		make -j$X V=s GLUON_TARGET=ramips-mt76x8 clean
-		# 
-        	# * ramips-rt305x
-		make -j$X V=s GLUON_TARGET=ramips-rt305x clean
-		#
-        	# * sunxi-cortexa7
-		make -j$X V=s GLUON_TARGET=sunxi-cortexa7 clean
-		#
-                # * x86-generic
-                make -j$X V=s GLUON_TARGET=x86-generic clean
-                #
-                # * x86-geode
-                make -j$X V=s GLUON_TARGET=x86-geode clean
-                #
-                # * x86-64
-                make V=s GLUON_TARGET=x86-64 clean
+               for TARGET in $(make list-targets); do
+                        make clean GLUON_TARGET=$TARGET
+                done
+
                 
 		
              ;;
@@ -270,7 +218,10 @@ case $CHOICE in
                 #
                 # sign images
                 contrib/sign.sh /usr/src/freifunk/gluon_openwrt/keys/secret.freifunk-siegburg output/images/sysupgrade/stable.manifest
-            ;;
+                # build factory image for archer c50v4
+		./makearcherc50v4factory.sh
+
+;;
 
            *) echo "no choice ..."
                    exit 0
