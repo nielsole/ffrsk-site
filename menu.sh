@@ -140,6 +140,11 @@ case $CHOICE in
 
         0)   echo "syncing git tree"
                 git pull; make update
+	     echo "adding gl-mifi to targets"
+                ./add_gl_mifi.sh
+             echo "patching respondd multicast address"
+                ./fix-respondd-rsk.sh
+
              ;;
 
          99)
