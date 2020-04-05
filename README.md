@@ -1,4 +1,4 @@
-# ffsu-site
+# fflo-site
 # site.conf for Lohmar Domain
 # for v2019.x - lede based gluon
 # openwrt
