@@ -1,4 +1,4 @@
-# ffsu-site
+# fflo-site
 # site.conf for Siegburg Domain
 # generated for 2019.x based gluon
 # openwrt
