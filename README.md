@@ -1,4 +1,4 @@
-# ffsu-site
+# fflo-site
 # site.conf for Soziale NetzWerke Domain
 # generated for 2019.x based gluon
 # openwrt
