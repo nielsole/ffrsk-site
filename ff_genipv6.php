@@ -1,6 +1,6 @@
 <?php
 // generate IPv6 from nodeid
-// (c) 2017 by Claus Marxmeier
+// (c) 2017-2020 by Claus Marxmeier
 $debug="";
 $platform="";
 $platform_system="\n";
@@ -32,7 +32,18 @@ $ipv6_prefix_05="2a03:2260:3017:500:";
 $ipv6_prefix_07="2a03:2260:3017:700:";
 $ipv6_prefix_11="2a03:2260:3017:1100:";
 $ipv6_prefix_14="2a03:2260:3017:1400:";
-    
+
+//Lohmar
+// 2a03:2260:123:
+$ipv6_lohmar_01="2a03:2260:123:100:";
+$ipv6_lohmar_03="2a03:2260:123:300:";
+$ipv6_lohmar_04="2a03:2260:123:400:";
+$ipv6_lohmar_05="2a03:2260:123:500:";
+$ipv6_lohmar_07="2a03:2260:123:700:";
+$ipv6_lohmar_11="2a03:2260:123:1100:";
+$ipv6_lohmar_14="2a03:2260:123:1400:";
+
+
 // Troisdorf
 $ipv6_tdf_prefix_4="2a03:2260:121:4000:";
 $ipv6_tdf_prefix_5="2a03:2260:121:5000:";
@@ -67,4 +78,14 @@ echo $platform;
 echo "Tdf-Stadt: ".$ipv6_tdf_prefix_5.$ipv6.$platform;
 echo "Tdf-Umgeb: ".$ipv6_tdf_prefix_4.$ipv6.$platform;
 echo "Tdf-Flu: ".$ipv6_tdf_prefix_6.$ipv6.$platform;
+echo $platform;
+echo "Supernodes Lohmar:".$platform.$platform;
+echo "Siegburg : ".$ipv6_lohmar_01.$ipv6.$platform;
+echo "Lohmar   : ".$ipv6_lohmar_03.$ipv6.$platform;
+echo "Sankt Au : ".$ipv6_lohmar_04.$ipv6.$platform;
+echo "SozNet   : ".$ipv6_lohmar_05.$ipv6.$platform;
+echo "Niederkas: ".$ipv6_lohmar_07.$ipv6.$platform;
+echo "Altenkir : ".$ipv6_lohmar_11.$ipv6.$platform;
+
+
 ?>
