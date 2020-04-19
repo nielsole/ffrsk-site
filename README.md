@@ -1,5 +1,5 @@
 # ffsu-site
-# site.conf for Siegburg Domain
+# site.conf for Siegburg Domain Soziale Netze
 # generated for 2019.x based gluon
 # openwrt
 
