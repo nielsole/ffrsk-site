@@ -1,5 +1,5 @@
 # ffsu-site
-# site.conf for Soziale NetzWerke Domain
+# site.conf for Soziale NetzWerke Domain Soziale Netze
 # generated for 2019.x based gluon
 # openwrt
 
