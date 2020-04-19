@@ -1,5 +1,5 @@
 # ffsu-site
-# site.conf for Siegburg Domain
+# site.conf for Siegburg Domain Umland
 # generated for 2019.x based gluon
 # openwrt
 
