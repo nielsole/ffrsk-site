@@ -26,12 +26,8 @@ if (!$nodeid){
 }
 // Siegburg
 $ipv6_prefix_01="2a03:2260:3017:100:";
-$ipv6_prefix_03="2a03:2260:3017:300:";
-$ipv6_prefix_04="2a03:2260:3017:400:";
+$ipv6_prefix_02="2a03:2260:3017:200:";
 $ipv6_prefix_05="2a03:2260:3017:500:";
-$ipv6_prefix_07="2a03:2260:3017:700:";
-$ipv6_prefix_11="2a03:2260:3017:1100:";
-$ipv6_prefix_14="2a03:2260:3017:1400:";
 
 //Lohmar
 // 2a03:2260:123:
@@ -66,18 +62,20 @@ $ipv6_tdf_prefix_6="2a03:2260:121:6000:";
             // print "<br>";
        // bsp:  2a03:2260:3017:300:
 $ipv6=$firstdec.substr($secondpart,0,2).":".substr($secondpart,2,2)."ff:fe".substr($secondpart,4,2).":".substr($secondpart,6,4);
-echo "nodeid   : ".$nodeid.$platform.$platform;
-echo "Siegburg : ".$ipv6_prefix_01.$ipv6.$platform;
-echo "Lohmar   : ".$ipv6_prefix_03.$ipv6.$platform;
-echo "Sankt Au : ".$ipv6_prefix_04.$ipv6.$platform;
-echo "SozNet   : ".$ipv6_prefix_05.$ipv6.$platform;
-echo "Niederkas: ".$ipv6_prefix_07.$ipv6.$platform;
-echo "Altenkir : ".$ipv6_prefix_11.$ipv6.$platform;
-echo "Rheinbach: ".$ipv6_prefix_14.$ipv6.$platform;
 echo $platform;
-echo "Tdf-Stadt: ".$ipv6_tdf_prefix_5.$ipv6.$platform;
-echo "Tdf-Umgeb: ".$ipv6_tdf_prefix_4.$ipv6.$platform;
-echo "Tdf-Flu: ".$ipv6_tdf_prefix_6.$ipv6.$platform;
+echo "nodeid    : ".$nodeid.$platform.$platform;
+echo $platform;
+echo "Supernodes Siegburg:".$platform.$platform;
+echo "Innenstadt: ".$ipv6_prefix_01.$ipv6.$platform;
+echo "Umland    : ".$ipv6_prefix_02.$ipv6.$platform;
+echo "SozNet    : ".$ipv6_prefix_05.$ipv6.$platform;
+echo $platform;
+echo $platform;
+echo "Supernodes Troisdorf:".$platform.$platform;
+echo "Innenstadt: ".$ipv6_tdf_prefix_5.$ipv6.$platform;
+echo "Umland    : ".$ipv6_tdf_prefix_4.$ipv6.$platform;
+echo "Soz. Netze: ".$ipv6_tdf_prefix_6.$ipv6.$platform;
+echo $platform;
 echo $platform;
 echo "Supernodes Lohmar:".$platform.$platform;
 echo "Siegburg : ".$ipv6_lohmar_01.$ipv6.$platform;
@@ -86,6 +84,6 @@ echo "Sankt Au : ".$ipv6_lohmar_04.$ipv6.$platform;
 echo "SozNet   : ".$ipv6_lohmar_05.$ipv6.$platform;
 echo "Niederkas: ".$ipv6_lohmar_07.$ipv6.$platform;
 echo "Altenkir : ".$ipv6_lohmar_11.$ipv6.$platform;
-
+// echo "Rheinbach: ".$ipv6_prefix_14.$ipv6.$platform;
 
 ?>
