@@ -189,9 +189,16 @@ case $CHOICE in
 		#
 		# * ipq806x
 		make -j$X V=s BROKEN=1 GLUON_WLAN_MESH_11s_BROKEN=1 GLUON_TARGET=ipq806x clean;  make -j$X V=s BROKEN=1 GLUON_WLAN_MESH_11s_BROKEN=1 GLUON_TARGET=ipq806x GLUON_BRANCH=stable		
-		#
+		# * lantiq-xrx200
+                make -j$X V=s GLUON_TARGET=lantiq-xrx200 clean; make -j$X V=s GLUON_TARGET=lantiq-xrx200 GLUON_BRANCH=stable
+                # * lantiq-xway
+                make -j$X V=s GLUON_TARGET=lantiq-xway clean; make -j$X V=s GLUON_TARGET=lantiq-xway GLUON_BRANCH=stable
+     		#
                 # * mpc85xx-generic
                 make -j$X V=s GLUON_TARGET=mpc85xx-generic clean; make -j$X V=s GLUON_TARGET=mpc85xx-generic GLUON_BRANCH=stable
+		#
+		# * mpc85xx-p1020
+                make -j$X V=s GLUON_TARGET=mpc85xx-p1020 clean; make -j$X V=s GLUON_TARGET=mpc85xx-p1020 GLUON_BRANCH=stable
                 #
 		# * mvebu-cortexa9
                 make -j$X V=s GLUON_TARGET=mvebu-cortexa9 clean; make -j$X V=s GLUON_TARGET=mvebu-cortexa9 GLUON_BRANCH=stable
