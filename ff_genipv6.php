@@ -78,7 +78,7 @@ echo "Soz. Netze: ".$ipv6_tdf_prefix_6.$ipv6.$platform;
 echo $platform;
 echo $platform;
 echo "Supernodes Lohmar:".$platform.$platform;
-echo "Siegburg : ".$ipv6_lohmar_01.$ipv6.$platform;
+echo "Rheinbach: ".$ipv6_lohmar_01.$ipv6.$platform;
 echo "Lohmar   : ".$ipv6_lohmar_03.$ipv6.$platform;
 echo "Sankt Au : ".$ipv6_lohmar_04.$ipv6.$platform;
 echo "SozNet   : ".$ipv6_lohmar_05.$ipv6.$platform;
