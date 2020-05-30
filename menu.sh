@@ -44,6 +44,10 @@ MENU="Welche Architektur(en) willst Du bauen:"
 #  * x86-geode
 #  * x86-64
 
+# added with 2020.x:
+#  * lantiq-xrx200
+#  * lantiq-xway
+#  * mpc85xx-p1020
 
 
 OPTIONS=(0 "make update"
