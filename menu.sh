@@ -20,7 +20,7 @@ do
 HEIGHT=20
 WIDTH=45
 CHOICE_HEIGHT=14
-BACKTITLE="Gluon 2019.x Firmware Builder"
+BACKTITLE="Gluon 2020.x Firmware Builder"
 TITLE="L2TP rhein-sieg modulares make"
 MENU="Welche Architektur(en) willst Du bauen:"
 
