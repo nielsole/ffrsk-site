@@ -24,32 +24,30 @@ BACKTITLE="Gluon 2020.x Firmware Builder"
 TITLE="L2TP rhein-sieg modulares make"
 MENU="Welche Architektur(en) willst Du bauen:"
 
-#  * ar71xx-generic
-#  * ar71xx-tiny
-#  * ar71xx-nand
-#  * ar71xx-mikrotik 
-#  * brcm2708-bcm2708
-#  * brcm2708-bcm2709
-#  * brcm2708-bcm2710
-#  * mpc85xx-generic
-#  * mvebu-cortexa9
-#  * ipq40xx-generic
-#  * ipq806x-generic
-#  * ramips-mt7620
-#  * ramips-mt7621
-#  * ramips-mt76x8
-#  * ramips-rt305x
-#  * sunxi-cortexa7
-#  * x86-generic
-#  * x86-geode
-#  * x86-64
+#### Please set GLUON_TARGET to a valid target. Gluon supports the following targets:
+#### gluon 2020.2 ff.
+#### * ar71xx-generic
+#### * ar71xx-tiny
+#### * ar71xx-nand
+#### * ath79-generic
+#### * brcm2708-bcm2708
+#### * brcm2708-bcm2709
+#### * ipq40xx-generic
+#### * ipq806x-generic
+#### * lantiq-xrx200
+#### * lantiq-xway
+#### * mpc85xx-generic
+#### * mpc85xx-p1020
+#### * ramips-mt7620
+#### * ramips-mt7621
+#### * ramips-mt76x8
+#### * ramips-rt305x
+#### * sunxi-cortexa7
+#### * x86-generic
+#### * x86-geode
+#### * x86-legacy
+#### * x86-64
 
-# added with 2020.x:
-#  * lantiq-xrx200
-#  * lantiq-xway
-#  * mpc85xx-p1020
-#  * ath79-generic
-#  * x86-legacy
 
 OPTIONS=(0 "make update"
         1 "all platforms"
