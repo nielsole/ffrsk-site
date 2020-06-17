@@ -48,6 +48,12 @@ MENU="Welche Architektur(en) willst Du bauen:"
 #### * x86-legacy
 #### * x86-64
 
+# non standard
+#  * ar71xx-mikrotik
+#  * brcm2708-bcm2710
+#  * mpc85xx-generic
+#  * mvebu-cortexa9
+
 
 OPTIONS=(0 "make update"
         1 "all platforms"
