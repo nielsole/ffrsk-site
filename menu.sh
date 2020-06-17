@@ -33,8 +33,8 @@ MENU="Welche Architektur(en) willst Du bauen:"
 #  * brcm2708-bcm2710
 #  * mpc85xx-generic
 #  * mvebu-cortexa9
-#  * ipq40xx
-#  * ipq806x
+#  * ipq40xx-generic
+#  * ipq806x-generic
 #  * ramips-mt7620
 #  * ramips-mt7621
 #  * ramips-mt76x8
@@ -48,7 +48,8 @@ MENU="Welche Architektur(en) willst Du bauen:"
 #  * lantiq-xrx200
 #  * lantiq-xway
 #  * mpc85xx-p1020
-
+#  * ath79-generic
+#  * x86-legacy
 
 OPTIONS=(0 "make update"
         1 "all platforms"
@@ -63,8 +64,8 @@ OPTIONS=(0 "make update"
         10 "x86-64"
 	11 "ar71xx-mikrotik"
 	12 "brcm2708-bcm2710"
-	13 "ipq40xx"
-	14 "ipq806x"
+	13 "ipq40xx--generic"
+	14 "ipq806x-generic"
 	15 "mvebu-cortexa9"
 	16 "ramips-mt7620"
 	17 "ramips-mt7621"
@@ -144,18 +145,19 @@ case $CHOICE in
 
         0)   echo "syncing git tree"
                 git pull; make update
-	     echo "adding gl-mifi to targets"
-                ./add_gl_mifi.sh
-             echo "patching respondd multicast address"
-                ./fix-respondd-rsk.sh
+             # echo "adding gl-mifi to targets"
+	     #   ./add_gl_mifi.sh
+	     #echo "patching respondd multicast address"
+             #   ./fix-respondd-rsk.sh
+
 
              ;;
 
          99)
              echo "cleaning up all targets ..."
-               for TARGET in $(make list-targets); do
-                        make clean GLUON_TARGET=$TARGET
-                done
+                for TARGET in $(make list-targets); do
+  			make clean GLUON_TARGET=$TARGET
+		done 
 
                 
 		
@@ -175,7 +177,10 @@ case $CHOICE in
                 #  * ar71xx-tiny
                 make -j$X V=s GLUON_TARGET=ar71xx-tiny clean; make -j$X V=s GLUON_TARGET=ar71xx-tiny GLUON_BRANCH=stable
                 #
-                # * brcm2708-bcm2708
+ 		#  * ath79-generic 
+	        make -j$X V=s GLUON_TARGET=ath79-generic clean; make -j$X V=s GLUON_TARGET=ath79-generic GLUON_BRANCH=stable	
+ 		#	
+		# * brcm2708-bcm2708
                 make -j$X V=s GLUON_TARGET=brcm2708-bcm2708 clean; make -j$X V=s GLUON_TARGET=brcm2708-bcm2708 GLUON_BRANCH=stable
                 #
                 # * brcm2708-bcm2709
@@ -184,21 +189,21 @@ case $CHOICE in
                 # * brcm2708-bcm2710
                 make -j$X V=s GLUON_TARGET=brcm2708-bcm2710 clean; make -j$X V=s GLUON_TARGET=brcm2708-bcm2710 GLUON_BRANCH=stable
                 #
-		# * ipq40xx
-		make -j$X V=s BROKEN=1 GLUON_WLAN_MESH_11s_BROKEN=1 GLUON_TARGET=ipq40xx clean;  make -j$X V=s BROKEN=1 GLUON_WLAN_MESH_11s_BROKEN=1 GLUON_TARGET=ipq40xx GLUON_BRANCH=stable		
+		# * ipq40xx-generic
+		make -j$X V=s BROKEN=1 GLUON_WLAN_MESH_11s_BROKEN=1 GLUON_TARGET=ipq40xx-generic clean;  make -j$X V=s BROKEN=1 GLUON_WLAN_MESH_11s_BROKEN=1 GLUON_TARGET=ipq40xx-generic GLUON_BRANCH=stable		
 		#
-		# * ipq806x
-		make -j$X V=s BROKEN=1 GLUON_WLAN_MESH_11s_BROKEN=1 GLUON_TARGET=ipq806x clean;  make -j$X V=s BROKEN=1 GLUON_WLAN_MESH_11s_BROKEN=1 GLUON_TARGET=ipq806x GLUON_BRANCH=stable		
+		# * ipq806x-generic
+		make -j$X V=s BROKEN=1 GLUON_WLAN_MESH_11s_BROKEN=1 GLUON_TARGET=ipq806x-generic clean;  make -j$X V=s BROKEN=1 GLUON_WLAN_MESH_11s_BROKEN=1 GLUON_TARGET=ipq806x-generic GLUON_BRANCH=stable		
 		# * lantiq-xrx200
-                make -j$X V=s GLUON_TARGET=lantiq-xrx200 clean; make -j$X V=s GLUON_TARGET=lantiq-xrx200 GLUON_BRANCH=stable
-                # * lantiq-xway
-                make -j$X V=s GLUON_TARGET=lantiq-xway clean; make -j$X V=s GLUON_TARGET=lantiq-xway GLUON_BRANCH=stable
-     		#
+		make -j$X V=s GLUON_TARGET=lantiq-xrx200 clean; make -j$X V=s GLUON_TARGET=lantiq-xrx200 GLUON_BRANCH=stable
+		# * lantiq-xway
+		make -j$X V=s GLUON_TARGET=lantiq-xway clean; make -j$X V=s GLUON_TARGET=lantiq-xway GLUON_BRANCH=stable
+		#
                 # * mpc85xx-generic
                 make -j$X V=s GLUON_TARGET=mpc85xx-generic clean; make -j$X V=s GLUON_TARGET=mpc85xx-generic GLUON_BRANCH=stable
 		#
-		# * mpc85xx-p1020
-                make -j$X V=s GLUON_TARGET=mpc85xx-p1020 clean; make -j$X V=s GLUON_TARGET=mpc85xx-p1020 GLUON_BRANCH=stable
+                # * mpc85xx-p1020
+		make -j$X V=s GLUON_TARGET=mpc85xx-p1020 clean; make -j$X V=s GLUON_TARGET=mpc85xx-p1020 GLUON_BRANCH=stable
                 #
 		# * mvebu-cortexa9
                 make -j$X V=s GLUON_TARGET=mvebu-cortexa9 clean; make -j$X V=s GLUON_TARGET=mvebu-cortexa9 GLUON_BRANCH=stable
@@ -226,18 +231,20 @@ case $CHOICE in
                 #
                 # * x86-64
                 make -j$X V=s GLUON_TARGET=x86-64 clean; make -j$X V=s GLUON_TARGET=x86-64 GLUON_BRANCH=stable
-                
-		
+                #
+	       	# * x86-legacy
+	        make -j$X V=s GLUON_TARGET=x86-legacy clean; make -j$X V=s GLUON_TARGET=x86-legacy GLUON_BRANCH=stable	
+		#
 
     	 	# make stable.manifest
                 make manifest GLUON_BRANCH=stable
                 #
                 # sign images
                 contrib/sign.sh /usr/src/freifunk/gluon_openwrt/keys/secret.freifunk-siegburg output/images/sysupgrade/stable.manifest
-                # build factory image for archer c50v4
-		./makearcherc50v4factory.sh
 
-;;
+		# build factory image for archer c50v4
+		./makearcherc50v4factory.sh
+            ;;
 
            *) echo "no choice ..."
                    exit 0
@@ -246,5 +253,4 @@ esac
 
 
 done # loop forever
-
 
