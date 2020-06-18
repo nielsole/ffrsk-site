@@ -33,13 +33,12 @@ GLUON_SITE_PACKAGES := \
     haveged \
     iptables \
     iwinfo \
-    iw \
+    iw-full \
     rsk-nightswitch \
     gluon-rsk-block-mesh \
     gluon-ping-check \
     gluon-rsk-config
 
-# patched iw package in openwrt/packages to full version to get full iw functionality
 
 DEFAULT_GLUON_RELEASE := stable-3.4.2
 # Allow overriding the release number from the command line
