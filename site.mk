@@ -1,5 +1,4 @@
 GLUON_SITE_PACKAGES := \
-    gluon-alfred \
     gluon-autoupdater \
     gluon-config-mode-autoupdater \
     gluon-config-mode-contact-info \
@@ -17,10 +16,12 @@ GLUON_SITE_PACKAGES := \
     gluon-ebtables-source-filter \
     gluon-ebtables-limit-arp \
     gluon-web-admin \
+    gluon-web-advanced \
     gluon-web-autoupdater \
     gluon-web-network \
     gluon-web-private-wifi \
     gluon-web-wifi-config \
+    gluon-web-wizard \
     gluon-mesh-batman-adv-15 \
     gluon-mesh-vpn-tunneldigger \
     gluon-neighbour-info \
