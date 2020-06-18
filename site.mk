@@ -16,12 +16,10 @@ GLUON_SITE_PACKAGES := \
     gluon-ebtables-source-filter \
     gluon-ebtables-limit-arp \
     gluon-web-admin \
-    gluon-web-advanced \
     gluon-web-autoupdater \
     gluon-web-network \
     gluon-web-private-wifi \
     gluon-web-wifi-config \
-    gluon-web-wizard \
     gluon-mesh-batman-adv-15 \
     gluon-mesh-vpn-tunneldigger \
     gluon-neighbour-info \
@@ -35,12 +33,13 @@ GLUON_SITE_PACKAGES := \
     haveged \
     iptables \
     iwinfo \
-    iw-full \
+    iw \
     rsk-nightswitch \
     gluon-rsk-block-mesh \
     gluon-ping-check \
     gluon-rsk-config
 
+# patched iw package in openwrt/packages to full version to get full iw functionality
 
 DEFAULT_GLUON_RELEASE := stable-3.4.2
 # Allow overriding the release number from the command line
