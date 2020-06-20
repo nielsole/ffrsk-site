@@ -1,5 +1,4 @@
 GLUON_SITE_PACKAGES := \
-    gluon-alfred \
     gluon-config-mode-autoupdater \
     gluon-config-mode-contact-info \
     gluon-config-mode-core \
