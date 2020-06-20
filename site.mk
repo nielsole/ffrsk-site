@@ -41,7 +41,7 @@ GLUON_SITE_PACKAGES := \
     rsk-robinson
 
 
-DEFAULT_GLUON_RELEASE := stable-3.4.2
+DEFAULT_GLUON_RELEASE := stable-3.4.3
 # Allow overriding the release number from the command line
 
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
