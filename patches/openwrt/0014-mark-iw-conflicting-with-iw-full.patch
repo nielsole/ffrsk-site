@@ -1,0 +1,36 @@
+From 57f56316babbd5e59da75597d051ee9dfbf5ff39 Mon Sep 17 00:00:00 2001
+From: David Bauer <mail@david-bauer.net>
+Date: Fri, 24 Jul 2020 00:08:30 +0200
+Subject: [PATCH] iw: mark iw conflicting with iw-full
+
+iw provides the same binary files as iw-full. Mark the iw package
+conflicting with iw-full to avoid the selection of both.
+
+Signed-off-by: David Bauer <mail@david-bauer.net>
+---
+ package/network/utils/iw/Makefile | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/package/network/utils/iw/Makefile b/package/network/utils/iw/Makefile
+index 64438a1931..434dd720d5 100644
+--- a/package/network/utils/iw/Makefile
++++ b/package/network/utils/iw/Makefile
+@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
+
+ PKG_NAME:=iw
+ PKG_VERSION:=5.0.1
+-PKG_RELEASE:=1
++PKG_RELEASE:=2
+
+ PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
+ PKG_SOURCE_URL:=@KERNEL/software/network/iw
+@@ -27,6 +27,7 @@ define Package/iw
+   URL:=http://wireless.kernel.org/en/users/Documentation/iw
+   DEPENDS:= +libnl-tiny
+   VARIANT:=tiny
++  CONFLICTS:=iw-full
+ endef
+
+ define Package/iw-full
+--
+2.27.0
