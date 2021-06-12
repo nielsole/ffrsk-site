@@ -1,0 +1,11 @@
+--- a/openwrt/package/kernel/mac80211/Makefile  2021-06-12 08:56:23.492375232 +0200
++++ b/openwrt/package/kernel/mac80211/Makefile  2021-06-12 08:56:42.565470365 +0200
+@@ -97,7 +97,7 @@
+ define KernelPackage/cfg80211
+   $(call KernelPackage/mac80211/Default)
+   TITLE:=cfg80211 - wireless configuration API
+-  DEPENDS+= +iw +wireless-regdb
++  DEPENDS+= +iw-full +wireless-regdb
+   ABI_VERSION:=$(PKG_VERSION)-$(PKG_RELEASE)
+   FILES:= \
+        $(PKG_BUILD_DIR)/compat/compat.ko \
