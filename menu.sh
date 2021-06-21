@@ -183,7 +183,7 @@ case $CHOICE in
                 contrib/sign.sh /usr/src/freifunk/gluon/keys/secret.freifunk-siegburg output/images/sysupgrade/stable.manifest
 
 		# build factory image for archer c50v4
-		./makearcherc50v4factory.sh
+		#./makearcherc50v4factory.sh
             ;;
 
            *) echo "no choice ..."
