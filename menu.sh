@@ -169,81 +169,18 @@ case $CHOICE in
                 # Platforms:
                 #
                 #  * ar71xx-generic
-                make -j$X V=s GLUON_TARGET=ar71xx-generic clean; make -j$X V=s GLUON_TARGET=ar71xx-generic GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
-                #
-		# * ar71xx-mikrotik
-		#make -j$X V=s BROKEN=1 GLUON_TARGET=ar71xx-mikrotik  clean; make -j$X V=s BROKEN=1 GLUON_TARGET=ar71xx-mikrotik GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
-                #
-                # * ar71xx-nand
-                make -j$X V=s GLUON_TARGET=ar71xx-nand clean; make -j$X V=s GLUON_TARGET=ar71xx-nand GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
-		#
-                #  * ar71xx-tiny
-                make -j$X V=s GLUON_TARGET=ar71xx-tiny clean; make -j$X V=s GLUON_TARGET=ar71xx-tiny GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
-                #
- 		#  * ath79-generic 
-	        make -j$X V=s GLUON_TARGET=ath79-generic clean; make -j$X V=s GLUON_TARGET=ath79-generic GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1	
- 		#	
-		# * brcm2708-bcm2708
-                make -j$X V=s GLUON_TARGET=brcm2708-bcm2708 clean; make -j$X V=s GLUON_TARGET=brcm2708-bcm2708 GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
-                #
-                # * brcm2708-bcm2709
-                make -j$X V=s GLUON_TARGET=brcm2708-bcm2709 clean; make -j$X V=s GLUON_TARGET=brcm2708-bcm2709 GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
-                #
-                # * brcm2708-bcm2710
-                make -j$X V=s GLUON_TARGET=brcm2708-bcm2710 clean; make -j$X V=s GLUON_TARGET=brcm2708-bcm2710 GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
-                #
-		# * ipq40xx-generic
-		make -j$X V=s BROKEN=1 GLUON_WLAN_MESH_11s_BROKEN=1 GLUON_TARGET=ipq40xx-generic clean;  make -j$X V=s BROKEN=1 GLUON_WLAN_MESH_11s_BROKEN=1 GLUON_TARGET=ipq40xx-generic GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1		
-		#
-		# * ipq806x-generic
-		make -j$X V=s BROKEN=1 GLUON_WLAN_MESH_11s_BROKEN=1 GLUON_TARGET=ipq806x-generic clean;  make -j$X V=s BROKEN=1 GLUON_WLAN_MESH_11s_BROKEN=1 GLUON_TARGET=ipq806x-generic GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1		
-		# * lantiq-xrx200
-		make -j$X V=s GLUON_TARGET=lantiq-xrx200 clean; make -j$X V=s GLUON_TARGET=lantiq-xrx200 GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
-		# * lantiq-xway
-		make -j$X V=s GLUON_TARGET=lantiq-xway clean; make -j$X V=s GLUON_TARGET=lantiq-xway GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
-		#
-                # * mpc85xx-generic
-                make -j$X V=s GLUON_TARGET=mpc85xx-generic clean; make -j$X V=s GLUON_TARGET=mpc85xx-generic GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
-		#
-                # * mpc85xx-p1020
-		make -j$X V=s GLUON_TARGET=mpc85xx-p1020 clean; make -j$X V=s GLUON_TARGET=mpc85xx-p1020 GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
-                #
-		# * mvebu-cortexa9
-                make -j$X V=s GLUON_TARGET=mvebu-cortexa9 clean; make -j$X V=s GLUON_TARGET=mvebu-cortexa9 GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
-                #
-		#  * ramips-mt7620
-		make -j$X V=s GLUON_TARGET=ramips-mt7620 clean; make -j$X V=s GLUON_TARGET=ramips-mt7620 GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
-		#
-                #  * ramips-mt7621 
-                make -j$X V=s GLUON_TARGET=ramips-mt7621 clean; make -j$X V=s BROKEN=1 GLUON_TARGET=ramips-mt7621 GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
-		#
-		#  * ramips-mt76x8
-		make -j$X V=s GLUON_TARGET=ramips-mt76x8 clean; make -j$X V=s GLUON_TARGET=ramips-mt76x8 GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
-	 	#
-		#  * ramips-rt305x
-		make -j$X V=s GLUON_TARGET=ramips-rt305x clean; make -j$X V=s GLUON_TARGET=ramips-rt305x GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
-		#
-		#  * sunxi-cortexa7
-		make -j$X V=s GLUON_TARGET=sunxi-cortexa7 clean; make -j$X V=s GLUON_TARGET=sunxi-cortexa7 GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
-		#
-                # * x86-generic
-                make -j$X V=s GLUON_TARGET=x86-generic clean; make -j$X V=s GLUON_TARGET=x86-generic GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
-                #
-                # * x86-geode
-                make -j$X V=s GLUON_TARGET=x86-geode clean; make -j$X V=s GLUON_TARGET=x86-geode GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
-                #
-                # * x86-64
-                make -j$X V=s GLUON_TARGET=x86-64 clean; make -j$X V=s GLUON_TARGET=x86-64 GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
-                #
-	       	# * x86-legacy
-	        make -j$X V=s GLUON_TARGET=x86-legacy clean; make -j$X V=s GLUON_TARGET=x86-legacy GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1	
-		#
+                #make -j$X V=s GLUON_TARGET=ar71xx-generic clean; make -j$X V=s GLUON_TARGET=ar71xx-generic GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
+                
+		## Make Loop
+		for TARGET in $(make list-targets); do
+  			make -j$X V=s GLUON_TARGET=$TARGET clean;  make -j$X V=s GLUON_TARGET=$TARGET GLUON_AUTOUPDATER_BRANCH=stable GLUON_AUTOUPDATER_ENABLED=1
+		done
 
     	 	# make stable.manifest
                 make manifest GLUON_BRANCH=stable
                 #
                 # sign images
-                contrib/sign.sh /usr/src/freifunk/gluon_openwrt/keys/secret.freifunk-siegburg output/images/sysupgrade/stable.manifest
+                contrib/sign.sh /usr/src/freifunk/gluon/keys/secret.freifunk-siegburg output/images/sysupgrade/stable.manifest
 
 		# build factory image for archer c50v4
 		./makearcherc50v4factory.sh
