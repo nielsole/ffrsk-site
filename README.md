@@ -9,3 +9,5 @@ Please look into separate branch for Domain related setup.
 - v2019.x_openwrt = new gluon 3.1.x firmware 
 - v2020.x_lo- = new gluon 3.4.x firmware for Domains on Lohmar supernodes
 - v2020.x_ffrsk- = new gluon 3.4.x firmware for Domains on Siegburg supernodes
+- v2021.x_lo- = new gluon 3.5.x firmware for Domains on Lohmar supernodes
+- v2021.x_ffrsk- = new gluon 3.5.x firmware for Domains on Siegburg supernodes
