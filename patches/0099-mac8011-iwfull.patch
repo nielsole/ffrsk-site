@@ -9,3 +9,4 @@
    ABI_VERSION:=$(PKG_VERSION)-$(PKG_RELEASE)
    FILES:= \
         $(PKG_BUILD_DIR)/compat/compat.ko \
+
