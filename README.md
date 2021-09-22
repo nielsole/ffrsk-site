@@ -1,5 +1,5 @@
 # fflo-site
-# site.conf for Rheinbach Domain
+# site.conf for Porz Domain
 # generated for 2021.x based gluon
 # openwrt
 
