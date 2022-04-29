@@ -1,3 +1,4 @@
+# obsolete - switches to new hood on supernode niederssel1
 # fflo-site
 # site.conf for Altenkirchen Domain
 # generated for 2021.x based gluon
