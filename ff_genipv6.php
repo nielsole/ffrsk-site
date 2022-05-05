@@ -45,6 +45,12 @@ $ipv6_tdf_prefix_4="2a03:2260:121:4000:";
 $ipv6_tdf_prefix_5="2a03:2260:121:5000:";
 $ipv6_tdf_prefix_6="2a03:2260:121:6000:";
 
+// Niederkassel
+$ipv6_nk_prefix_1="2a03:2260:124:100";
+$ipv6_nk_prefix_3="2a03:2260:124:300";
+$ipv6_nk_prefix_4="2a03:2260:124:400";
+$ipv6_nk_prefix_5="2a03:2260:124:500";
+
 
 // Test - lets calculate ipv6 from nodeid
           $firstpart=substr($nodeid,0,2);
@@ -85,6 +91,14 @@ echo "SozNet   : ".$ipv6_lohmar_05.$ipv6.$platform;
 echo "Niederkas: ".$ipv6_lohmar_07.$ipv6.$platform;
 echo "Altenkir : ".$ipv6_lohmar_11.$ipv6.$platform;
 // echo "Rheinbach: ".$ipv6_prefix_14.$ipv6.$platform;
+
+echo $platform;
+echo $platform;
+echo "Supernodes Niederkassel:".$platform.$platform;
+echo "Niederkassel : ".$ipv6_nk_prefix_1.$ipv6.$platform;
+echo "Sankt Augustin: ".$ipv6_nk_prefix_3.$ipv6.$platform;
+echo "Altenkirchen: ".$ipv6_nk_prefix_4.$ipv6.$platform;
+echo "Soziale Netzwerke: ".$ipv6_nk_prefix_5.$ipv6.$platform;
 
 ?>
 root@dns:/srv/www/vhosts/netsecdb.de/httpdocs/freifunk# vi ff_genipv6.php
