@@ -46,10 +46,10 @@ $ipv6_tdf_prefix_5="2a03:2260:121:5000:";
 $ipv6_tdf_prefix_6="2a03:2260:121:6000:";
 
 // Niederkassel
-$ipv6_nk_prefix_1="2a03:2260:124:100";
-$ipv6_nk_prefix_3="2a03:2260:124:300";
-$ipv6_nk_prefix_4="2a03:2260:124:400";
-$ipv6_nk_prefix_5="2a03:2260:124:500";
+$ipv6_nk_prefix_1="2a03:2260:124:100:";
+$ipv6_nk_prefix_3="2a03:2260:124:300:";
+$ipv6_nk_prefix_4="2a03:2260:124:400:";
+$ipv6_nk_prefix_5="2a03:2260:124:500:";
 
 
 // Test - lets calculate ipv6 from nodeid
