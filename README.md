@@ -1,4 +1,4 @@
-# ffsu-site
+# ffrsk-site
 # site-dirs für Rhein-Sieg Domains
 #
 Please look into separate branch for Domain related setup.
@@ -12,3 +12,4 @@ Please look into separate branch for Domain related setup.
 - v2021.x_lo- = new gluon 3.5.x firmware for Domains on Lohmar supernodes
 - v2021.x_ffrsk- = new gluon 3.5.x firmware for Domains on Siegburg supernodes
 - v2021.x_nk = new gluon 3.5.x firmware for Domains on Niederkassel supernodes
+- v2022.x_ffrsk = new gluon 3.7.x firmware for Domains on Siegburg supernodes
