@@ -31,7 +31,7 @@ GLUON_SITE_PACKAGES := \
     gluon-status-page \
     gluon-status-page-mesh-batman-adv \
     haveged \
-    iptables \
+    iptables-nft \
     iwinfo \
     iw-full \
     rsk-nightswitch \
