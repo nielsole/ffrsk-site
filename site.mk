@@ -31,7 +31,6 @@ GLUON_SITE_PACKAGES := \
     gluon-status-page \
     gluon-status-page-mesh-batman-adv \
     haveged \
-    iptables \
     iwinfo \
     iw-full \
     rsk-nightswitch \
@@ -40,7 +39,7 @@ GLUON_SITE_PACKAGES := \
     gluon-rsk-config
 
 
-DEFAULT_GLUON_RELEASE := stable-3.6.0
+DEFAULT_GLUON_RELEASE := stable-3.7.0
 # Allow overriding the release number from the command line
 
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
